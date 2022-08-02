@@ -13,7 +13,7 @@ function problem4 {
 
 function problem5 {
   # Type your answer to problem #5 below this line
-  grep -E '^.*[A-Z].*[a-z].*[0-9].*$' passwords.txt 
+  grep -E '.*[A-Z].*[a-z].*[0-9]|.*[0-9].*[a-z].*[A-Z]|.*[a-z].*[A-Z].*[0-9]' passwords.txt
 }
 
 function problem6 {
