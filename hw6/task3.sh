@@ -33,5 +33,5 @@ function problem11 {
 
 function problem12 {
   # Type your answer to problem #12 below this line
-  echo "not yet implemented"
+  grep -Ei '^(ATG).*?(TAA|TAG|TGA)$' dna.txt
 }
