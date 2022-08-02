@@ -1,0 +1,3 @@
+ERROR: InsufficientBalance, ITEM ID: 87451, TIME: 12:47:33, QUANTITY: 2
+ERROR: DroppedConnection, ITEM ID: 87451, TIME: 12:49:59, QUANTITY: 2
+ERROR: InsufficientInventory ITEM ID: 000000, TIME: 12:52:25, QUANTITY: 150
