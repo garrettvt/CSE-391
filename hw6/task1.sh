@@ -17,6 +17,6 @@ function problem2 {
 }
 
 function problem3 {
-  # Type your answer to problem #3 below this line
-  grep -E '^([A-Z]+[a-z]+\s)([A-Z]+[a-z])' names.txt 
+  # Type your answer to problem #3 below this line 
+  grep -E '^([A-Z][a-z]+\s)([A-Z][a-z]+$)' names.txt
 }
