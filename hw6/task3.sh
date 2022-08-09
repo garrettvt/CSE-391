@@ -23,12 +23,12 @@ function problem9 {
 
 function problem10 {
   # Type your answer to problem #10 below this line
-  echo "not yet implemented"
+  grep -Ei '^([ACTG]{3})[ACTG]*\1$' dna.txt
 }
 
 function problem11 {
   # Type your answer to problem #11 below this line
-  echo "not yet implemented"
+  grep -Ei '^([ACTG]{3})+$' dna.txt
 }
 
 function problem12 {
