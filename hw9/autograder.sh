@@ -8,7 +8,8 @@
 # Check to see if the number of arguments that is passed
 # is less than 1. 
 if [ "$#" -lt 1 ]; then
-	echo "Usage: ./autograder.sh MAXPOINTS" 1>&2; exit 1
+	echo "Usage: ./autograder.sh MAXPOINTS"
+	exit 1
 fi
 
 echo "Autograding CSE 391 Homework"
