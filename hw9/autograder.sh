@@ -26,7 +26,9 @@ for kid in $(ls students/); do
 
 	if [ -f "task1.sh" ]; then
 		./task1.sh > output.txt
-		missed=$(diff -w output.txt <(echo "$expected") | grep "^>" | wc -l)
+		m1=$(diff -w output.txt <(echo "$expected") | grep "^>" | wc -l)
+		m2=$(diff -w output.txt <(echo "$expected") | grep "^<" | wc -l)
+		let missed="$m1 + $m2"
 		if [ "$missed" -gt 0 ]; then
 			echo "$kid has incorrect output ($missed lines do not match)"
 			let score="$1 - ($missed * 5)"
