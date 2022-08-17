@@ -41,6 +41,7 @@ for kid in $(ls students/); do
 		fi
 	else
 		echo "$kid did not turn in the assignment"
+		echo "$kid has earned a score of 0 / $1"
 	fi
 
 	echo
