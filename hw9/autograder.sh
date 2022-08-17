@@ -15,10 +15,11 @@ echo "Autograding CSE 391 Homework"
 echo "Grading with a max score of $1"
 echo
 
-expected=$(<expected.txt)
+# expected=$(<expected.txt)
 
 for kid in $(ls students/); do
-	
+	expected=$(<expected.txt)
+
 	echo "Processing $kid ..."
 
 	(
@@ -27,6 +28,7 @@ for kid in $(ls students/); do
 	if [ -f "task1.sh" ]; then
 		./task1.sh > output.txt
 		missed=$(diff -w output.txt <(echo "$expected") | grep "^>" | wc -l)
+		echo "$missed"
 		if [ "$missed" -gt 0 ]; then
 			echo "$kid has incorrect output ($missed lines do not match)"
 			let score="$1 - ($missed * 5)"
